@@ -50,7 +50,7 @@ public class CryptKicker {
 
             for (int k = 0; k < t.length(); k++) {
 
-                if ((textDict[t.charAt(k) - 'a'] != 0 && textDict[t.charAt(k) - 'a'] != word.charAt(k)) ||
+                if (textDict[t.charAt(k) - 'a'] != 0 && textDict[t.charAt(k) - 'a'] != word.charAt(k) ||
                         (wordDict[word.charAt(k) - 'a'] != 0 && wordDict[word.charAt(k) - 'a'] != t.charAt(k))) {
                     match = false;
                     for (Character c : a_tempChar) {
